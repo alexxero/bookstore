@@ -12,12 +12,13 @@
     </div>
 
     <div class="field">
-      <p><%= s.label :min_price, 'Min Price' %> - <%= s.text_field :min_price, size: 10 %></p>
-      <p><%= s.label :max_price, 'Max Price' %> - <%= s.text_field :max_price, size: 10 %></p>
+      <p style="display: inline"><%= s.label :min_price, 'Min Price' %> <%= s.text_field :min_price, size: 10 %></p>
+      <br>
+      <p style="display: inline"><%= s.label :max_price, 'Max Price' %> <%= s.text_field :max_price, size: 10 %></p>
     </div>
 
     <div class="field">
-      <p><%= s.label :isbn, 'ISBN' %> - <%= s.text_field :isbn, size: 10 %></p>
+      <%= s.label :isbn, 'ISBN' %> <%= s.text_field :isbn, size: 10 %>
     </div>
 
     <div class="action"><%= s.submit 'Search', class: 'pure-button pure-button-primary' %></div>
