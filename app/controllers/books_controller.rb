@@ -63,7 +63,7 @@ class BooksController < ApplicationController
 
   def publish
     sleep 2
-    @book.update(published_at: Time.zone.now)
+    @book.update(published_at: Time.now.in_time_zone)
   end
 
   private
