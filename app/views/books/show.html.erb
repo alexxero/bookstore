@@ -20,7 +20,11 @@
   <%= @book.isbn %>
 </p>
 
+<p>
+  <strong>Published At:</strong>
+  <%= @book.published_at %>
+</p>
 
-<%= link_to 'Publish', publish_book_path(@book) %>
+<%= link_to 'Publish', publish_book_path(@book), method: :patch %> |
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>
